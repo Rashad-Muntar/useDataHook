@@ -1,5 +1,5 @@
 {
-  "name": "useData",
+  "name": "use-data-fetch",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Rashad Muntar",
@@ -8,5 +8,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "typescript": "^4.8.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.19",
+    "@types/react-dom": "^18.0.6"
+  }
 }
