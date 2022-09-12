@@ -19,17 +19,17 @@
 - React
 - Node.JS
 
-
 ### Usage
+
 Run
 yarn add use-data-fetch
 OR
 npm i use-data-fetch
 
 ### Usage in React
-  import useDataFetch from "use-data-fetch"
-  const data = useDataFetch(url)
-    - `url` is the api's endpoint
+
+import useDataFetch from "use-data-fetch"
+const data = useDataFetch(url) - `url` is the api's endpoint
 
 Feel free to check the [issues page](https://github.com/Rashad-Muntar/useDataHook/issues).
 
@@ -46,10 +46,9 @@ Feel free to check the [issues page](https://github.com/Rashad-Muntar/useDataHoo
 Give a ⭐️ if you like this project!
 
 ### Attribution
+
 Coinstats API
 
-
 ## License
-
 
 This project is licensed under the MIT License
