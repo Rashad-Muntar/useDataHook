@@ -1,6 +1,6 @@
 {
   "name": "use-data-fetch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "author": "Rashad Muntar",
   "license": "MIT",
@@ -14,5 +14,17 @@
   "devDependencies": {
     "@types/react": "^18.0.19",
     "@types/react-dom": "^18.0.6"
+  },
+  "keywords": [
+    "react data fetch hook",
+    "react custome hook for rest api", 
+    "custome hook for react data fetching"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Rashad-Muntar/userDataHook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Rashad-Muntar/userDataHook/issues"
   }
 }
