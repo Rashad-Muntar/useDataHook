@@ -22,14 +22,15 @@
 ### Usage
 
 Run
-yarn add use-data-fetch
-OR
-npm i use-data-fetch
+- `yarn add use-data-fetch`
+### OR
+ - `npm i use-data-fetch`
 
 ### Usage in React
 
-import useDataFetch from "use-data-fetch"
-const data = useDataFetch(url) - `url` is the api's endpoint
+- import useDataFetch from "use-data-fetch"
+- const data = useDataFetch(url)
+  - `url` is the api's endpoint
 
 Feel free to check the [issues page](https://github.com/Rashad-Muntar/useDataHook/issues).
 
@@ -37,17 +38,14 @@ Feel free to check the [issues page](https://github.com/Rashad-Muntar/useDataHoo
 
 👤 **Rashad Muntar**
 
-- GitHub: [@Rashad-Muntar](https://github.com/Rashad-Muntar)
+- GitHub: - [@Rashad-Muntar](https://github.com/Rashad-Muntar)
 - Twitter - [@RashadToure](https://twitter.com/RashadToure)
-- LinkedIn: [Rashad Muntar](https://www.linkedin.com/in/rashad-muntar/)
+- LinkedIn: - [Rashad Muntar](https://www.linkedin.com/in/rashad-muntar/)
 
 ### Show your support
 
 Give a ⭐️ if you like this project!
 
-### Attribution
-
-Coinstats API
 
 ## License
 
