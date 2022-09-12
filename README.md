@@ -1,6 +1,6 @@
 # USEDATAFETCH HOOK
 
-> The hook simplifies api calls, that prevents repeattive api api call data
+> The hook simplifies api calls, that prevents repeattive code for api calls
 
 <p align="center">
     <a href="https://www.javascript.com/" alt="JS">
