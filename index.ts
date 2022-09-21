@@ -23,13 +23,13 @@ const useDataFetch = ({
   const [data, setData] = useState(null);
 
   if (
-    methods.indexOf(method as string) === -1 ||
-    modes.indexOf(mode as string) === -1 ||
-    cats.indexOf(cat as string) === -1 ||
-    credential.indexOf(credentials as string) === -1 ||
-    contentTypes.indexOf(contentType as string) === -1 ||
-    redirects.indexOf(redirect as string) === -1 ||
-    referrerPolicies.indexOf(referrerPolicy as string) === -1
+    methods.indexOf(method?.toString() as string) === -1 ||
+    modes.indexOf(mode?.toString() as string) === -1 ||
+    cats.indexOf(cat?.toString() as string) === -1 ||
+    credential.indexOf(credentials?.toString() as string) === -1 ||
+    contentTypes.indexOf(contentType?.toString() as string) === -1 ||
+    redirects.indexOf(redirect?.toString() as string) === -1 ||
+    referrerPolicies.indexOf(referrerPolicy?.toString() as string) === -1
   ) {
     return;
   }
