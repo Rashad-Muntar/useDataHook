@@ -1,5 +1,14 @@
 import { useEffect, useState } from "react";
 import { fetProps } from "./types";
+import {
+  methods,
+  modes,
+  cats,
+  credential,
+  contentTypes,
+  redirects,
+  referrerPolicies,
+} from "./optionValues";
 
 const useDataFetch = ({
   url,
@@ -13,9 +22,18 @@ const useDataFetch = ({
 }: fetProps) => {
   const [data, setData] = useState(null);
 
-  if([a,b,c,d,e].indexOf(x) !== -1) {
-    // ...
-}
+  if (
+    methods.indexOf(method as string) === -1 ||
+    modes.indexOf(mode as string) === -1 ||
+    cats.indexOf(cat as string) === -1 ||
+    credential.indexOf(credentials as string) === -1 ||
+    contentTypes.indexOf(contentType as string) === -1 ||
+    redirects.indexOf(redirect as string) === -1 ||
+    referrerPolicies.indexOf(referrerPolicy as string) === -1
+  ) {
+    return;
+  }
+
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(url, {
@@ -23,7 +41,6 @@ const useDataFetch = ({
         mode: mode, // no-cors, *cors, same-origin
         cache: cat, // *default, no-cache, reload, force-cache, only-if-cached
         credentials: credentials, // include, *same-origin, omit
-
         headers: {
           "Content-Type": "application/json" || contentType,
         },
