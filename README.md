@@ -22,15 +22,46 @@
 ### Usage
 
 Run
+
 - `yarn add use-data-fetch`
+
 ### OR
- - `npm i use-data-fetch`
+
+- `npm i use-data-fetch`
 
 ### Usage in React
 
 - import useDataFetch from "use-data-fetch"
 - const data = useDataFetch(url)
   - `url` is the api's endpoint
+
+### Optional Headers
+
+The fetch() method can optionally accept a other parameters, an init object that allows you to control a number of different settings:
+all what you need to do just indicate the option you wish to use,
+
+- example const data = useDataFetch(url, "GET", "cors", "same-origin")
+  get
+- method?: "GET" | "POST" | "PUT" | "DELETE";
+- mode?: "no-cors" | "cors" | "same-origin";
+- catch?:
+  | "default"
+  | "no-cache"
+  | "reload"
+  | "force-cache"
+  | "only-if-cached"
+  | undefined;
+- credentials?: "same-origin" | "include" | "omit";
+- contentType?: "text/plain";
+  -- The ddefault for contype is "application/json"
+- redirect?: "manual" | "follow" | "error";
+- referrerPolicy?:
+  | "no-referrer"
+  | "no-referrer-when-downgrade"
+  | "origin"
+  | "strict-origin"
+  | "strict-origin-when-cross-origin"
+  | "unsafe-url";
 
 Feel free to check the [issues page](https://github.com/Rashad-Muntar/useDataHook/issues).
 
@@ -45,7 +76,6 @@ Feel free to check the [issues page](https://github.com/Rashad-Muntar/useDataHoo
 ### Show your support
 
 Give a ⭐️ if you like this project!
-
 
 ## License
 
