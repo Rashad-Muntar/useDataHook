@@ -41,6 +41,7 @@ Run
 all what you need to do just indicate the option you wish to use.
   - Example: `const data = useDataFetch(url, "GET", "cors", "same-origin")`
 
+### Options
 - method?: "GET" | "POST" | "PUT" | "DELETE";
 - mode?: "no-cors" | "cors" | "same-origin";
 - catch?:
