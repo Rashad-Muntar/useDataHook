@@ -13,6 +13,9 @@ const useDataFetch = ({
 }: fetProps) => {
   const [data, setData] = useState(null);
 
+  if([a,b,c,d,e].indexOf(x) !== -1) {
+    // ...
+}
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(url, {

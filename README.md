@@ -38,8 +38,8 @@ Run
 ### Optional Headers
 
 - The fetch() method can optionally accept a other parameters, an init object that allows you to control a number of different settings:
-all what you need to do just indicate the option you wish to use.
-  - Example: `const data = useDataFetch(url, "GET", "cors", "same-origin")`
+all what you need to do just indicate the option you wish to use. In a situtaion where you would want to use an option that comes after an option you dont need, you just need to pass "_" in place of the option you don't need.
+  - Example: `const data = useDataFetch(url, "GET", "cors", _, "same-origin")`
 
 ### Options
 - method?: "GET" | "POST" | "PUT" | "DELETE";
