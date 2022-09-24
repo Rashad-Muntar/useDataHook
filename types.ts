@@ -1,22 +1,21 @@
-export interface fetProps {
-    method?: "GET" | "POST" | "PUT" | "DELETE";
-    url: string;
-    mode?: "no-cors" | "cors" | "same-origin";
-    cat?:
-      | "default"
-      | "no-cache"
-      | "reload"
-      | "force-cache"
-      | "only-if-cached"
-      | undefined;
-    credentials?: "same-origin" | "include" | "omit";
-    contentType?: "text/plain";
-    redirect?: "manual" | "follow" | "error";
-    referrerPolicy?:
-      | "no-referrer"
-      | "no-referrer-when-downgrade"
-      | "origin"
-      | "strict-origin"
-      | "strict-origin-when-cross-origin"
-      | "unsafe-url";
-  }
+export type method = "GET" | "POST" | "PUT" | "DELETE" | "_";
+export type cat= | "default"
+| "no-cache"
+| "reload"
+| "force-cache"
+| "only-if-cached"
+| undefined;
+export type mode = "no-cors" | "cors" | "same-origin";
+
+
+export type credentials = "same-origin" | "include" | "omit";
+export type contentType = "text/plain";
+export type redirect = "manual" | "follow" | "error";
+export type referrerPolicy =
+  | "no-referrer"
+  | "no-referrer-when-downgrade"
+  | "origin"
+  | "strict-origin"
+  | "strict-origin-when-cross-origin"
+  | "unsafe-url";
+
